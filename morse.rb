@@ -30,3 +30,10 @@
 def decode_char(character)
   @alphabets[character]
 end
+
+def decode_word(word)
+  decoder = ''
+  character = word.split
+  character.each { |c| decoder += decode_char(c) }
+  decoder
+end
