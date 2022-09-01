@@ -42,7 +42,7 @@ def decode_message(message)
   decoder_message = ''
   words = message.split(/   /)
   words.each { |c| decoder_message += "#{decode_word(c)} " }
-  decoder_message
+  decoder_message.strip
 end
 
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
