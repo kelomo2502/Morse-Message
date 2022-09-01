@@ -26,3 +26,7 @@
   '-.--' => 'Y',
   '..--' => 'Z'
 }
+
+def decode_char(character)
+  @alphabets[character]
+end
